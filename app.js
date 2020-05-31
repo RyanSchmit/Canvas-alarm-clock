@@ -1,3 +1,4 @@
+//clock
 window.onload = function() {
   clock();  
     function clock() {
@@ -24,7 +25,7 @@ window.onload = function() {
     }
 }
 
-// hiding and showing Hours and Minutes
+// hiding and showing Hours and Minutes drop down
 function showHours() {
   document.getElementById("hours").classList.toggle("show");
 }
@@ -48,5 +49,12 @@ window.onclick = function(event) {
   }
 }
 
-
- 
+//Hide and show hours and minutes
+function alarm() {
+  var hoursAndMinutes = document.getElementById("minutesAndHours");
+  if (hoursAndMinutes.style.display === "none") {
+    hoursAndMinutes.style.display = "block";
+  } else {
+    hoursAndMinutes.style.display = "none";
+  }
+}

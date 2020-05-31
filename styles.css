@@ -13,8 +13,24 @@ body {
   text-align: center;
   font-family: 'Oswald';
   font-weight: 300;
-  color: orange;
+  color: #ffa500;
   margin: 30pt auto;
+}
+
+#setAlarm {
+  margin: 30pt auto;
+  width: 100pt;
+  height: 20pt;
+}
+
+.alarmbtn {
+  width: 100pt;
+  height: 20pt;
+  background-color: orangered;
+}
+
+#minutesAndHours {
+  display: none;
 }
 
 #hoursdropbtn {
