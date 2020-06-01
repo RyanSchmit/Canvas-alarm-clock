@@ -25,6 +25,7 @@ window.onload = function() {
     }
 }
 
+
 // hiding and showing Hours and Minutes drop down
 function showHours() {
   document.getElementById("hours").classList.toggle("show");
@@ -34,27 +35,18 @@ function showMinutes() {
   document.getElementById("minutes").classList.toggle("show");
 }
 
-
-// Close the dropdown
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
 //Hide and show hours and minutes
 function alarm() {
   var hoursAndMinutes = document.getElementById("minutesAndHours");
+  var selectedHours = document.getElementById("selectedHours").value;
+  var selectedMinutes = document.getElementById("selectedMinutes").value;
   if (hoursAndMinutes.style.display === "none") {
     hoursAndMinutes.style.display = "block";
   } else {
     hoursAndMinutes.style.display = "none";
+    document.getElementById("demo").innerHTML = selectedHours + selectedMinutes;
   }
 }
+
+
+

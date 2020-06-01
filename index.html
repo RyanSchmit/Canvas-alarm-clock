@@ -22,98 +22,103 @@
     <div id="minutesAndHours"> 
         <div id="hourDropDown" class="dropDown">
             <button id="hoursdropbtn" class="dropbtn" onclick="showHours()">Hours</button>
-            <div id="hours" class="dropdown-content">
-                <a>12am</a>
-                <a>1am</a>
-                <a>2am</a>
-                <a>3am</a>
-                <a>4am</a>
-                <a>5am</a>
-                <a>6am</a>
-                <a>7am</a>
-                <a>8am</a>
-                <a>9am</a>
-                <a>10am</a>
-                <a>11am</a>
-                <a>12pm</a>
-                    <a>1pm</a>
-                    <a>2pm</a>
-                    <a>3pm</a>
-                    <a>4pm</a>
-                    <a>5pm</a>
-                    <a>6pm</a>
-                    <a>7pm</a>
-                    <a>8pm</a>
-                    <a>9pm</a>
-                    <a>10pm</a>
-                    <a>11pm</a>
-            </div>
+            <form id="hours" class="dropdown-content">
+                <select id="selectedHours">
+                    <option value="12am"> 12am</option>
+                    <option value="1am"> 1am</option>
+                    <option value="2am"> 2am</option>
+                    <option value="3am"> 3am</option>
+                    <option value="4am"> 4am</option>
+                    <option value="5am"> 5am</option>
+                    <option value="6am"> 6am</option>
+                    <option value="7am"> 7am</option>
+                    <option value="8am"> 8am</option>
+                    <option value="9am"> 9am</option>
+                    <option value="10am"> 10am</option>
+                    <option value="11am"> 11am</option>
+                        <option value="12pm"> 12pm</option>
+                        <option value="1pm"> 1pm</option>
+                        <option value="2pm"> 2pm</option>
+                        <option value="3pm"> 3pm</option>
+                        <option value="4pm"> 4pm</option>
+                        <option value="5pm"> 5pm</option>
+                        <option value="6pm"> 6pm</option>
+                        <option value="7pm"> 7pm</option>
+                        <option value="8pm"> 8pm</option>
+                        <option value="9pm"> 9pm</option>
+                        <option value="10pm"> 10pm</option>
+                        <option value="11pm"> 11pm</option>
+                </select>
+            </form>
         </div>
 
         <div id="minuteDropDown" class="dropDown">
             <button id="minutesdropbtn" class="dropbtn"  onclick="showMinutes()">Minutes</button>
-            <div id="minutes" class="dropdown-content">
-                    <a>:01</a>
-                    <a>:02</a>
-                    <a>:03</a>
-                    <a>:04</a>
-                    <a>:05</a>
-                    <a>:06</a>
-                    <a>:07</a>
-                    <a>:08</a>
-                    <a>:09</a>
-                    <a>:10</a>
-                    <a>:11</a>
-                    <a>:12</a>
-                    <a>:13</a>
-                    <a>:14</a>
-                    <a>:15</a>
-                    <a>:16</a>
-                    <a>:17</a>
-                    <a>:18</a>
-                    <a>:19</a>
-                    <a>:20</a>
-                    <a>:21</a>
-                    <a>:22</a>
-                    <a>:23</a>
-                    <a>:24</a>
-                    <a>:25</a>
-                    <a>:26</a>
-                    <a>:27</a>
-                    <a>:28</a>
-                    <a>:29</a>
-                        <a>:30</a>
-                        <a>:31</a>
-                        <a>:32</a>
-                        <a>:33</a>
-                        <a>:34</a>
-                        <a>:35</a>
-                        <a>:36</a>
-                        <a>:37</a>
-                        <a>:38</a>
-                        <a>:39</a>
-                        <a>:40</a>
-                        <a>:41</a>
-                        <a>:42</a>
-                        <a>:43</a>
-                        <a>:44</a>
-                        <a>:45</a>
-                        <a>:46</a>
-                        <a>:47</a>
-                        <a>:48</a>
-                        <a>:49</a>
-                        <a>:50</a>
-                        <a>:51</a>
-                        <a>:52</a>
-                        <a>:53</a>
-                        <a>:54</a>
-                        <a>:55</a>
-                        <a>:56</a>
-                        <a>:57</a>
-                        <a>:58</a>
-                        <a>:59</a>
-            </div>
-    </div>
+            <form id="minutes" class="dropdown-content">
+                <select id="selectedMinutes">
+                    <option value=":01"> :01</option>
+                    <option value=":02"> :02</option>
+                    <option value=":03"> :03</option>
+                    <option value=":04"> :04</option>
+                    <option value=":05"> :05</option>
+                    <option value=":06"> :06</option>
+                    <option value=":07"> :07</option>
+                    <option value=":08"> :08</option>
+                    <option value=":09"> :09</option>
+                    <option value=":10"> :10</option>
+                    <option value=":11"> :11</option>
+                    <option value=":12"> :12</option>
+                    <option value=":13"> :13</option>
+                    <option value=":14"> :14</option>
+                    <option value=":15"> :15</option>
+                    <option value=":16"> :16</option>
+                    <option value=":17"> :17</option>
+                    <option value=":18"> :18</option>
+                    <option value=":19"> :19</option>
+                    <option value=":20"> :20</option>
+                    <option value=":21"> :21</option>
+                    <option value=":22"> :22</option>
+                    <option value=":23"> :23</option>
+                    <option value=":24"> :24</option>
+                    <option value=":25"> :25</option>
+                    <option value=":26"> :26</option>
+                    <option value=":27"> :27</option>
+                    <option value=":28"> :28</option>
+                    <option value=":29"> :29</option>
+                        <option value=":30"> :30</option>
+                        <option value=":31"> :31</option>
+                        <option value=":32"> :32</option>
+                        <option value=":33"> :33</option>
+                        <option value=":34"> :34</option>
+                        <option value=":35"> :35</option>
+                        <option value=":36"> :36</option>
+                        <option value=":37"> :37</option>
+                        <option value=":38"> :38</option>
+                        <option value=":39"> :39</option>
+                        <option value=":40"> :40</option>
+                        <option value=":41"> :41</option>
+                        <option value=":42"> :42</option>
+                        <option value=":43"> :43</option>
+                        <option value=":44"> :44</option>
+                        <option value=":45"> :45</option>
+                        <option value=":46"> :46</option>
+                        <option value=":47"> :47</option>
+                        <option value=":48"> :49</option>
+                        <option value=":49"> :49</option>
+                        <option value=":50"> :50</option>
+                        <option value=":51"> :51</option>
+                        <option value=":52"> :52</option>
+                        <option value=":53"> :53</option>
+                        <option value=":54"> :54</option>
+                        <option value=":55"> :55</option>
+                        <option value=":56"> :56</option>
+                        <option value=":57"> :57</option>
+                        <option value=":58"> :58</option>
+                        <option value=":59"> :59</option>
+                </select>
+            </form>
+        </div>
 </div>
+<p id="demo"></p>
 </body>
 </html>
