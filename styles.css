@@ -37,6 +37,10 @@ body {
   margin-left: 100px;
 }
 
+#amPM {
+  margin-left: 200px;
+}
+
 #minutesAndHours {
   display: block;
 }

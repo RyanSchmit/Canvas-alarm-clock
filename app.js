@@ -33,6 +33,7 @@ function showHours() {
 
 function showMinutes() {
   document.getElementById("minutes").classList.toggle("show");
+  document.getElementById("amPM").classList.toggle("show");
 }
 
 //Hide and show hours and minutes
@@ -40,13 +41,19 @@ function alarm() {
   var hoursAndMinutes = document.getElementById("minutesAndHours");
   var selectedHours = document.getElementById("selectedHours").value;
   var selectedMinutes = document.getElementById("selectedMinutes").value;
+  var selectedAMPM = document.getElementById("selectedAMPM").value;
   if (hoursAndMinutes.style.display === "none") {
     hoursAndMinutes.style.display = "block";
   } else {
     hoursAndMinutes.style.display = "none";
-    document.getElementById("demo").innerHTML = selectedHours + selectedMinutes;
+    document.getElementById("demo").innerHTML = selectedHours + selectedMinutes + selectedAMPM;
   }
 }
 
+//check alarm 
+function checkAlarm() {
+  if (selectedHours + selectedMinutes === hour+':'+min+':'+sec +' '+mid) {
+    alert("Canvas assignments:")
+  }
 
-
+}
