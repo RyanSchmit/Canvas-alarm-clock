@@ -93,3 +93,7 @@ body {
 .show {
   display: block;
 }
+
+.currentAlarm {
+  color: white;
+}

@@ -8,6 +8,7 @@ window.onload = function() {
     var min = now.getMinutes();
     var sec = now.getSeconds();
     var mid = 'pm';
+    let currentTime =  document.getElementById('clock').innerHTML =     hour+':'+min+':'+sec +' '+mid ;
     if (min < 10) {
       min = "0" + min;
     }
@@ -20,7 +21,7 @@ window.onload = function() {
     if(TwentyFourHour < 12) {
        mid = 'am';
     }     
-  document.getElementById('clock').innerHTML =     hour+':'+min+':'+sec +' '+mid ;
+    currentTime
     setTimeout(clock, 1000);
     }
 }
@@ -52,8 +53,6 @@ function alarm() {
 
 //check alarm 
 function checkAlarm() {
-  if (selectedHours + selectedMinutes === hour+':'+min+':'+sec +' '+mid) {
-    alert("Canvas assignments:")
-  }
-
+  var alarmTime = document.getElementById("demo")
+  alert(alarmTime)
 }
